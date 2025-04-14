@@ -1,6 +1,6 @@
 const tasksPerDay = {
   Sunday: ["Read something relaxing", "Call mom", "Make pancakes"],
-  Monday: ["Atomic workout", "Clean microwave", "Set weekly goals"],
+  Monday: ["Workout: Yoga", "Chore: Clean microwave", "Personal: Set weekly goals"],
   Tuesday: ["Tidy up desk", "30 min walk", "Water the plants"],
   Wednesday: ["Laundry day", "Midweek stretch", "Fix that squeaky drawer"],
   Thursday: ["Declutter 3 items", "Clean fridge", "Inbox zero attempt"],
