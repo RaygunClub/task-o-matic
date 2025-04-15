@@ -145,7 +145,7 @@ let tasksPerDay = {
   }
 };
 
-dayTitle.textContent = `{today}'s Tasks`;
+dayTitle.textContent = `${today}'s Tasks`;
 loadTasks(today);
 
 function loadTasks(day) {
