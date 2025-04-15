@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+
 body {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Risque', cursive;
   background-color: #fef9ef;
   color: #333;
   padding: 2rem;
@@ -9,27 +12,55 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   background-color: #fffaf2;
-  border: 4px double #e49b0f;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 0 12px #f0d9b5;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
-  color: #e94f37;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #5F9595;
+  font-family: 'Risque', cursive;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2.2em;
+  color: #D73009;
+  font-family: 'Risque', cursive;
+}
+
+h3 {
+  font-size: 2.0em;
+  color: #01B2B0;
+  font-weight: 700;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #4f4f4f;
+  font-family: 'Risque', cursive;
+}
+
+h4 {
+  font-size: 1.8em;
+  color: #FDDCB4;
+  font-weight: 700;
+  font-family: 'Risque', cursive;
+}
+
+h5 {
+  font-size: 1.5em;
+  color: #1E555C;
+  font-family: 'Risque', cursive;
+}
+
+h6 {
+  font-size: 1.5em;
+  color: #C44536;
+  font-family: 'Risque', cursive;
 }
 
 ul {
@@ -46,5 +77,20 @@ li {
 
 input[type="checkbox"] {
   transform: scale(1.5);
-  accent-color: #e94f37;
+  accent-color: #F0A2B5;
+}
+
+button {
+  background-color: #e94f37;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #d43d2d;
 }
