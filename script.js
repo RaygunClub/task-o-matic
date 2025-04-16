@@ -146,7 +146,7 @@ let tasksPerDay = {
 };
 
 dayTitle.textContent = `${today}'s Tasks`;
-loadTasks(today);
+
 
 function loadTasks(day) {
   taskList.innerHTML = "";
@@ -189,7 +189,7 @@ function loadTasks(day) {
 
 resetBtn.addEventListener('click', () => {
   localStorage.removeItem(today);
-  loadTasks(today);
+  
 });
 
 const quotes = [
@@ -211,4 +211,9 @@ function displayRandomQuote() {
   quoteEl.textContent = `✨ ${quote}`;
 }
 
-displayRandomQuote();
+
+
+window.addEventListener('DOMContentLoaded', function () {
+  displayRandomQuote();
+  loadTasks(today);
+});
