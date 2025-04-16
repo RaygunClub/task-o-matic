@@ -9,6 +9,9 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-repeat: repeat;
+  background-blend-mode: overlay;
 }
 
 .container {
@@ -44,23 +47,12 @@ h3 {
   font-family: 'Risque', cursive;
 }
 
-h4 {
-  font-size: 1.8em;
-  color: #FDDCB4;
-  font-weight: 700;
-  font-family: 'Risque', cursive;
-}
-
-h5 {
-  font-size: 1.5em;
-  color: #1E555C;
-  font-family: 'Risque', cursive;
-}
-
-h6 {
-  font-size: 1.5em;
-  color: #C44536;
-  font-family: 'Risque', cursive;
+.section-card {
+  background-color: #ffffffcc;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
 ul {
@@ -93,4 +85,12 @@ button {
 
 button:hover {
   background-color: #d43d2d;
+}
+
+#quote {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #C44536;
 }
