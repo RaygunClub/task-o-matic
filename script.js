@@ -157,9 +157,12 @@ function loadTasks(day) {
   const allTasks = { ...everydayTasks, ...dayTasks };
 
   for (const [section, tasks] of Object.entries(allTasks)) {
+    const sectionCard = document.createElement('div');
+    sectionCard.classList.add('section-card');
+
     const header = document.createElement('h3');
-    header.textContent = section;
-    taskList.appendChild(header);
+    header.textContent = `✨ ${section}`;
+    sectionCard.appendChild(header);
 
     tasks.forEach(task => {
       const li = document.createElement('li');
@@ -177,8 +180,10 @@ function loadTasks(day) {
 
       li.appendChild(checkbox);
       li.appendChild(label);
-      taskList.appendChild(li);
+      sectionCard.appendChild(li);
     });
+
+    taskList.appendChild(sectionCard);
   }
 }
 
@@ -186,3 +191,24 @@ resetBtn.addEventListener('click', () => {
   localStorage.removeItem(today);
   loadTasks(today);
 });
+
+const quotes = [
+  "Put some pep in your proton!",
+  "Zap through your tasks like it’s 1959!",
+  "Another day, another space ray.",
+  "You’ve got atomic-level hustle, baby!",
+  "Fuel up your brain reactor and go!",
+  "Stay radiant, even when dusting!",
+  "Shake your atoms and conquer that checklist!",
+  "Beam yourself into focus mode!",
+  "Today’s a fine day for excellence and vacuuming.",
+  "Think big. Plan atomic."
+];
+
+function displayRandomQuote() {
+  const quoteEl = document.getElementById('quote');
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  quoteEl.textContent = `✨ ${quote}`;
+}
+
+displayRandomQuote();
